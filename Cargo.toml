@@ -1,0 +1,10 @@
+[package]
+name = "fmp-client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fmp-interface = { path = "../interface" }
+fipc = { git = "https://github.com/feois/fipc.git" }
+tokio = { version = "1.54.1", features = ["sync", "rt-multi-thread"] }
+thiserror = "2.0.21"
